@@ -4,21 +4,22 @@ Make sure to ask for a Re-Type Password and if the password is incorrect
 give a chance to enter it again but it should not be more than 3 times.
 """
 
-input_uname = input('Please input your username: ')
+username = input("Please input your username: ")
 
-attempt_cnt = 3
+max_attempts = 3
+attempts = 0
 
-while attempt_cnt > 0:
-    password = input('Please enter your password: ')
-    retype_pw = input('Please re-type your password: ')
+while attempts < max_attempts:
+    password = input("Please enter your password: ")
+    retype_password = input("Please re-type your password: ")
 
-    if password == retype_pw:
+    if password == retype_password:
         print("Perfect! You are in!")
-
+        break
     else:
-        attempt_cnt -= 1
-        if attempt_cnt > 0:
-            retype_pw = input('Password do not match. Please re-type password: ')
-        else:
-            print('Sorry! You have no more attempt left')
+        attempts += 1
+        print(f"Password do not match. Please try again. ({max_attempts - attempts} attempts left)")
+
+if attempts == max_attempts:
+    print("Sorry! You have no more attempts left")
 
