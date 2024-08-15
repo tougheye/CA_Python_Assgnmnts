@@ -30,8 +30,8 @@ class Time:
         return f'({self.displayTime()}) is total {self.total_mins} minutes'
 
 
-time1 = Time(hours=2,minutes=42)
-time2 = Time(hours=1,minutes=18)
+time1 = Time(hours=2, minutes=42)
+time2 = Time(hours=1, minutes=18)
 
 print(time1.displayTime())
 print(time1.addTime(time2))

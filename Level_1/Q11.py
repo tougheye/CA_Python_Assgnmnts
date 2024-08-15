@@ -24,12 +24,12 @@ def int_to_str(num):
 
 def final_output(string_num):
     sum_digit = calc_sum_of_digits(string_num)
-
+    # as long as the sum of the digits are not a single number, loop keeps calling the functions
     while sum_digit > 9:
         sum_str = int_to_str(sum_digit)
         sum_digit = calc_sum_of_digits(sum_str)
 
-    return f'Final Output: {sum_digit}'
+    return f'Final Output: {sum_digit}'         # Only print the final output.
 
 
 print(final_output(input_num))

@@ -6,12 +6,12 @@ version of the entire content of the file WORDS.TXT with all the alphabet "J" to
 displayed as an alphabet "I" on the screen.
 Note: Assume that words.txt does not contain any J alphabet otherwise."""
 
-# defining the function
+# defining the function to open the file
 def Jtol(file_path):
     with open(file_path,'r') as file:
         content = file.read()
-        edited_content = content.replace('J', "I")
-        edited_content = edited_content.replace("j", "i")
+        edited_content = content.replace('J', "I")      # replace "J"s with "I"s
+        edited_content = edited_content.replace("j", "i")   # replace "j" with "i"s
 
     with open(file_path, 'w') as file:
         file.write(edited_content)
@@ -22,7 +22,7 @@ file_cont = "Jntelligence js key to success, " \
             "but jnterest and passjon jn your work are equally " \
             "jmportant for achjeving great results."
 
-# write the content string in the .txt file
+# write the content string in the words.txt file
 with open('words.txt', 'w') as file:
     file.write(file_cont)
 

@@ -5,6 +5,7 @@ def count_line(file_path):
         lines = file.readlines()
 
     with open('demo.txt', 'w') as file:
+        # the line count will be saved in demo.txt file
         file.write(f'"{file_path}" file has {len(lines)} lines')
 
 count_line('doc.txt')

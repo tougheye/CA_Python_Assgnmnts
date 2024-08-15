@@ -7,7 +7,7 @@ def ind_err(list1):
     result = []
     try:
         for i in range(len(list1)):
-            result.append(list1[i + 1])
+            result.append(list1[i + 1])     # should throw an Index error
     except IndexError:
         return 'OOPS! index out of range'
     return result

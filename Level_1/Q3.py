@@ -15,6 +15,7 @@ grades['computer'] = input("What've you got in Computer? ")
 
 def grade(subject):
     mark_num = float(grades[subject])
+    # define the grades for each mark scale
     if mark_num >= 90:
         return f'Your grade in {subject} is: A'
     elif mark_num >= 80:

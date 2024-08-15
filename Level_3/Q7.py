@@ -10,14 +10,14 @@ students = ['Sam', 'Alice', 'Mona']
 subjects = ['Commerce', 'Science', 'Computer']
 
 # dictionary using for loop
-def dict_from_for(list1, list2):
+def dict_from_2lists(list1, list2):
     dict_for = {}
 
     for i in range(len(students)):
         dict_for[list1[i]] = list2[i]
     return dict_for
 
-print(f'the dictionary using for loop is {dict_from_for(students,subjects)}')
+print(f'the dictionary using for loop is {dict_from_2lists(students,subjects)}')
 
 
 # using dictionary comprehension

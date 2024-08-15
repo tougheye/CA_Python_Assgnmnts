@@ -15,8 +15,7 @@ def len_encod_str(input_str):
 
     # the for loop will iterate through the input string
     for i in input_str[1:]:
-        # if the next str is the same as the last string,
-        # it only counts up,
+        # if the next str is the same as the last string, it only counts up,
         if i == output_str[-1]:
             cur_str_cnt += 1
         # otherwise, it adds the count of the current str in the output string and then adds the count number

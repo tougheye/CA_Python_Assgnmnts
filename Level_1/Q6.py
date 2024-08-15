@@ -9,14 +9,16 @@ number = int(input("Enter the number: "))
 
 
 def chk_perfect(num):
-    divisors = []
+    divisors = []           # create a list of all divisors
     for i in range(1, (num//2)+1):          #since a number's largest divisor <= 1/2 of the number
         if num % i == 0:
             divisors.append(i)
 
+    # take the sum of the divisor list and check if equals to the number
     if sum(divisors) == num:
         return f'Input: {num} Output: Yes'
     else:
         return  f'Input: {num} Output: No'
+
 
 print(chk_perfect(number))

@@ -16,4 +16,4 @@ def power_of_two(n):
 
 
 
-print(power_of_two(12))
+print(power_of_two(8))

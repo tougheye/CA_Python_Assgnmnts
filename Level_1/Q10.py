@@ -8,6 +8,8 @@ input_string = input('Please enter your string: ')
 
 
 def reverse_str(string1):
+    # the function will split the string into individual words based on empty spaces
+    # then join the list in the reverse order
     words = string1.split()
     print(f'Output after reverse = {" ".join(words[::-1])}')
 

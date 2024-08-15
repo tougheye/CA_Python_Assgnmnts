@@ -8,7 +8,7 @@ Input_list = [1, 2, 2, 2, 4, 1, 2, 6, 5]
 def freq_count(list1):
     output_dict = {}
     for i in list1:
-        output_dict[i] = Input_list.count(i)
+        output_dict[i] = Input_list.count(i)        # dictionary key is the element in the list, value are the counts
     print(f'Frequency Count: {output_dict}')
 
 

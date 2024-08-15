@@ -11,7 +11,7 @@ stop_num = int(input("Please enter the stop integer: "))
 def sum_of_odd(start, stop):
     sum_odd = 0
     for i in range(start, stop+1):
-        if i % 2 != 0:
+        if i % 2 != 0:      # filter if the number is odd
             sum_odd += i
     return f'The sum of the odd numbers in this range is {sum_odd}'
 

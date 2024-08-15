@@ -13,6 +13,7 @@ input_list = ['Red', 'Blue', 'Black', 'White', 'Pink']
 def indiv_str(input_str):
     return [i for i in input_str]
 
+#the map function applies the predefined function on each list element
 output_list = list(map(indiv_str, input_list))
 
 print(output_list)

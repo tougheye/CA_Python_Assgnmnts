@@ -9,6 +9,7 @@ user_input = input('Please enter a number: ')
 
 if user_input.isnumeric():
     number = int(user_input)
+    # first check both cases
     if number % 3 == 0 and number % 5 == 0:
         print('Consultadd - Python Training')
     elif number % 3 == 0:

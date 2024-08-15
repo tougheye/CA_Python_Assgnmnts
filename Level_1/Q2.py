@@ -1,5 +1,6 @@
 """
-Write a program that accepts a string as input from the user and calculates the number of digits and letters.
+Write a program that accepts a string as input
+from the user and calculates the number of digits and letters.
 Input: Hello123
 Output: Alphabets: 5 & Number : 3
 """
